@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouteDebugger", "RouteDebugger.csproj", "{14F5EE1F-B4D9-4040-921C-4224187E0A8A}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueFenix.RouteDebugger", "BlueFenix.RouteDebugger.csproj", "{14F5EE1F-B4D9-4040-921C-4224187E0A8A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{01C7063C-C7D6-4C15-B040-2A88DD3E317B}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,5 +25,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37B59E63-0C92-4865-916B-A93274BB90E1}
 	EndGlobalSection
 EndGlobal
