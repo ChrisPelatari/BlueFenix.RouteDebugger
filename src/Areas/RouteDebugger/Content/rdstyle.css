@@ -4,8 +4,7 @@
 }
 
 table.monospace {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: small;
+    font-family: Inconsolata, monospace;
     text-transform: capitalize;
 }
 

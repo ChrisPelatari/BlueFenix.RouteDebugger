@@ -16,3 +16,4 @@ _[Ss]cripts
 *.dot[Cc]over
 src/.vs/
 src/.DS_Store
+.DS_Store
