@@ -8,27 +8,26 @@
     <script src="~/Scripts/bootstrap.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="brand" href="#">Route Debugger</a>
-                <form class="navbar-form pull-left" target="_blank">
-                    <select id="testMethod" class="span2">
-                        <option>GET</option>
-                        <option>POST</option>
-                        <option>PUT</option>
-                        <option>PATCH</option>
-                        <option>DELETE</option>
-                    </select>
-                    <div class="input-append">
-                        <input id="testRoute" class="input-xxlarge" type="text" />
-                        <input id="btnDetect" class="btn" type="button" value="Send" />
-                        <input id="btnClear" class="btn" type="button" value="Clear" />
-                    </div>
-                </form>
-            </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Route Debugger</a>
+            <form class="d-flex">
+                <select id="testMethod" class="form-select me-2">
+                    <option>GET</option>
+                    <option>POST</option>
+                    <option>PUT</option>
+                    <option>PATCH</option>
+                    <option>DELETE</option>
+                </select>
+                <div class="input-group">
+                    <input id="testRoute" class="form-control" type="text" />
+                    <button id="btnDetect" class="btn btn-primary" type="button">Send</button>
+                    <button id="btnClear" class="btn btn-danger" type="button">Clear</button>
+                </div>
+            </form>
         </div>
-    </div>
+    </nav>
+
     <div class="container">
         <!-- Status -->
         <div class="row" data-bind="if: displayStatusCode">
@@ -36,7 +35,7 @@
         </div>
         <!-- Error Display -->
         <div class="row" data-bind="if: displayError">
-            <p class="text-error" data-bind="text: errorMessage"></p>
+            <p class="text-danger" data-bind="text: errorMessage"></p>
         </div>
         <!-- Route Data -->
         <div class="row" data-bind="if: displayRouteData">
